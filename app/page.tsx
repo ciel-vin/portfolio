@@ -66,6 +66,26 @@ const projects: Project[] = [
     alt: "CV Anugerah Sejati ERP — distribution control board",
   },
   {
+    kicker: "AI SaaS · Product I own",
+    title: "FeedLens",
+    role: "AI review-intelligence SaaS · Solo founder & full-stack",
+    problem:
+      "Customer feedback piles up faster than anyone can read it — and a gut-feel summary misses what to actually do about it.",
+    build:
+      "An AI SaaS that turns raw reviews into decisions: per-review sentiment, a 1–5 score, recurring themes and one concrete action item — Groq (llama-3.3-70b) under a strict-JSON contract, with a Recharts dashboard, auth, metered plans and Xendit billing.",
+    metric: "reviews → decisions",
+    resultRest: "sentiment · themes · action items · free + Pro tiers · billing in test mode · built & owned end to end.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Groq AI", "Recharts", "Xendit"],
+    href: "https://getfeedlens.com",
+    hrefLabel: "Live site ↗",
+    caseStudy: "/work/feedlens",
+    mockUrl: "app.getfeedlens.com · dashboard",
+    mockAccent: "// review → sentiment · themes · action",
+    mockBig: "Reviews → decisions",
+    img: "",
+    alt: "FeedLens — AI review-intelligence SaaS dashboard",
+  },
+  {
     kicker: "SaaS · Multi-tenant",
     title: "MomenKita",
     role: "QR-based live photo-sharing for events · Solo founder & full-stack",
@@ -192,6 +212,7 @@ const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "RLS", "Realtime"],
     href: "https://crewboard-ciel-vins-projects.vercel.app",
     hrefLabel: "Live demo ↗",
+    caseStudy: "/work/crewboard",
     mockUrl: "crewboard · saas demo",
     mockAccent: "// multi-tenant team board",
     mockBig: "Stays in sync",
@@ -337,6 +358,7 @@ function ProjectCard({ p, reverse, priority }: { p: (typeof projects)[number]; r
 function NowPanel() {
   const live = [
     { name: "Distribution ERP", host: "cvanugerahsejati.com", href: "https://cvanugerahsejati.com", note: "live · in production" },
+    { name: "FeedLens", host: "getfeedlens.com · ai saas", href: "https://getfeedlens.com", note: "live · product I own" },
     { name: "MomenKita", host: "momenkita · vercel", href: "https://wedding-photos-nine-black.vercel.app", note: "live demo" },
     { name: "Florist Storefront", host: "florist demo · vercel", href: "https://hanna-petals.vercel.app", note: "live demo" },
     { name: "Lumière", host: "beauty demo · vercel", href: "https://lumiere-skincare-delta.vercel.app", note: "live demo" },
@@ -546,6 +568,7 @@ export default function Home() {
             <motion.div variants={fadeUp} className="mt-7 flex flex-wrap justify-center gap-6 font-mono text-[0.9rem]">
               <a href="https://linkedin.com/in/alvin-salim-57b06240a" target="_blank" rel="noopener noreferrer" className="text-faint transition-colors hover:text-brand">LinkedIn ↗</a>
               <a href="https://cvanugerahsejati.com" target="_blank" rel="noopener noreferrer" className="text-faint transition-colors hover:text-brand">ERP ↗</a>
+              <a href="https://getfeedlens.com" target="_blank" rel="noopener noreferrer" className="text-faint transition-colors hover:text-brand">FeedLens ↗</a>
               <a href="https://wedding-photos-nine-black.vercel.app" target="_blank" rel="noopener noreferrer" className="text-faint transition-colors hover:text-brand">MomenKita ↗</a>
               <a href="https://hanna-petals.vercel.app" target="_blank" rel="noopener noreferrer" className="text-faint transition-colors hover:text-brand">Florist Demo ↗</a>
               <a href="https://lumiere-skincare-delta.vercel.app" target="_blank" rel="noopener noreferrer" className="text-faint transition-colors hover:text-brand">Lumière ↗</a>
